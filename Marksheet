@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+float a,b,c,d,total,avg,perc;
+
+printf("MARKSHEET\n");
+printf("NAME:Sibra Siddiqui \n");
+printf("SECTION: A\n");
+printf("INSTITUTE:NAVTTC\n");
+
+printf("ENTER PYTHON NUMBERS ");
+scanf("%f",&a);
+
+printf("ENTER C-LANGUAGE NUMBERS ");
+scanf("%f",&b);
+
+printf("ENTER BASIC ELECTRONICS NUMBERS ");
+scanf("%f",&c);
+
+printf("ENTER ARDUINO NUMBERS ");
+scanf("%f",&d);
+
+total = a+b+c+d;
+printf("Total Numbers are: %.2f\n",total);
+
+avg = total/4;
+printf("Average is: %.2f\n",avg);
+
+perc = (total/400)*100;
+printf("Percentage is %.2f\n",perc);
+
+if(perc>=90)
+{
+	printf("A");
+}
+else if(perc >= 80 )
+{
+	printf("B");
+}
+else if (perc >= 70 )
+{
+	printf("C");
+}
+else if(perc >= 60 )
+{
+	printf("D");
+}
+else
+{
+	printf("FAIL");
+}
+}
