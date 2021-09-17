@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+	float a;
+	printf("Enter a number");
+	scanf("%f",&a);
+	
+	if (a>0)
+	{
+		printf("Positive");
+	}
+	else if(a<0 )
+	{
+		printf("Negative");
+	}
+	else 
+	{
+		printf("its 0");
+	}
+	
+}
